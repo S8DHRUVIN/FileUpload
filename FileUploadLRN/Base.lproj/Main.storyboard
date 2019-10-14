@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FileUploadLRN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jbi-Tm-fTg">
+                                <rect key="frame" x="167" y="113" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="2GZ-91-TVk"/>
+                                    <constraint firstAttribute="width" constant="80" id="w4F-HC-GhU"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MaK-jF-9o5">
+                                <rect key="frame" x="25" y="210" width="364" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="pOv-cP-26o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ToO-Yz-0Aw">
+                                <rect key="frame" x="25" y="258" width="364" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="g7p-MJ-Jpg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bo8-aX-EFr">
+                                <rect key="frame" x="25" y="306" width="364" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="mCs-X0-yT1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cBS-SS-lip">
+                                <rect key="frame" x="25" y="366" width="364" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3o-Ro-L79">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="35"/>
+                                        <state key="normal" title="Cancle"/>
+                                        <connections>
+                                            <action selector="btnCancleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nZv-KB-ymy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXd-bM-Noz">
+                                        <rect key="frame" x="182" y="0.0" width="182" height="35"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="btnSaveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="txv-94-t8u"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="32h-qH-VAg"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7P-Aq-ej3">
+                                <rect key="frame" x="214" y="160" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="7fb-6N-J2l"/>
+                                    <constraint firstAttribute="width" constant="33" id="zwJ-5c-otu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <action selector="btnUserUploadFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l92-02-Tk6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jbi-Tm-fTg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="A1r-h7-jgV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ToO-Yz-0Aw" secondAttribute="trailing" constant="25" id="AS6-zx-3mB"/>
+                            <constraint firstItem="ToO-Yz-0Aw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="BoS-8l-F7C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cBS-SS-lip" secondAttribute="trailing" constant="25" id="GQY-fO-bdi"/>
+                            <constraint firstItem="bo8-aX-EFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ICr-s0-ksU"/>
+                            <constraint firstItem="bo8-aX-EFr" firstAttribute="top" secondItem="ToO-Yz-0Aw" secondAttribute="bottom" constant="13" id="MBA-e7-YV0"/>
+                            <constraint firstItem="Jbi-Tm-fTg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SDR-Iy-8b8"/>
+                            <constraint firstItem="cBS-SS-lip" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Uwn-aI-vym"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MaK-jF-9o5" secondAttribute="trailing" constant="25" id="Vgu-Os-4u9"/>
+                            <constraint firstItem="MaK-jF-9o5" firstAttribute="top" secondItem="u7P-Aq-ej3" secondAttribute="bottom" constant="17" id="WAt-Nn-Owt"/>
+                            <constraint firstItem="MaK-jF-9o5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ZE6-ds-Y5r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bo8-aX-EFr" secondAttribute="trailing" constant="25" id="aMg-dI-3ej"/>
+                            <constraint firstItem="ToO-Yz-0Aw" firstAttribute="top" secondItem="MaK-jF-9o5" secondAttribute="bottom" constant="13" id="dLf-mg-drL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u7P-Aq-ej3" secondAttribute="trailing" constant="167" id="fjI-Xm-eSD"/>
+                            <constraint firstItem="MaK-jF-9o5" firstAttribute="top" secondItem="Jbi-Tm-fTg" secondAttribute="bottom" constant="17" id="nMm-IT-X1G"/>
+                            <constraint firstItem="cBS-SS-lip" firstAttribute="top" secondItem="bo8-aX-EFr" secondAttribute="bottom" constant="25" id="rjb-VI-cM7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgUserUploadFile" destination="Jbi-Tm-fTg" id="h7a-pN-0Ai"/>
+                        <outlet property="txtStudentEmail" destination="bo8-aX-EFr" id="pMp-eV-OuU"/>
+                        <outlet property="txtStudentGender" destination="ToO-Yz-0Aw" id="211-0I-kdZ"/>
+                        <outlet property="txtStudentName" destination="MaK-jF-9o5" id="ZTd-qK-AOi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
